@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+/* Popup */
+#popup {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 80%;
+    height: 40%;
+}
+#popup2 {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 60%;
+    height: 40%;
+}
+#popup img{
+    width: 600px;
+    height: 800px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.582);
+  }
+  #popup2 img{
+    width: 600px;
+    height: 800px;
+    border: 5px solid rgb(194, 194, 194);
+  }
+  #close{
+    position: absolute;
+    background: #34368F;
+    color: #fff;
+    right: 230px;
+    top: -13px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Arial Black', Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(124, 124, 124);
+  }
+  /* Popup End*/
+    /* Navbar */
+#navbarNav{
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+#navbarNav > ul > li:nth-child(n) > a:hover{
+    color: #ffbf00;
+    transition: .5ms ease;
+}
+
+#navbarNav > ul > li.nav-item.dropdown > ul > li > a:hover{
+    background: #ffbf00;
+}
+.nav-breadcrumb{
+    width: 70px;
+    height: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffc107;
+}
+.btn-login:hover{
+    background: #ffc107;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+    /* Welcome Section */
+.welcome-row{
+    display: inline-block;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 50px;
+}
+.welcome-s-img img{
+    height: auto;
+    max-width: 100%;
+    border-style: none;
+    vertical-align: middle;
+}
+.welcome-s{
+    display: inline-block;
+}
+.welcome-s h1{
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffc107;
+    text-decoration: black;
+}
+.welcome-s p{
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    color: rgb(100, 96, 96);
+}
+.welcome-s .read-more{
+    text-decoration: none;
+    color: black;
+    background-color: #ffc107;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    margin: 5px;
+}
+.welcome-s .read-more:hover{
+    background-color: rgb(133, 122, 122);
+    color: white;
+    border: none;
+}
+
+
+    /* Our Courses */    
+
+.cources h1{
+        text-align: center;
+        margin: 6px;
+        padding: 5px;
+        color: #ffc107;
+        font-weight: bold;
+        font-size: 40px;
+    }
+.cources .col .card p{
+        font-size: 17px;
+        color: rgb(133, 122, 122);
+    }
+.cources{
+    padding: 10px;
+}
+.card{
+        text-align: center;
+        margin: 3px 3px;
+        cursor: pointer;
+        position: absolute;
+}
+.card:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card .card-img-top{
+        overflow: hidden;
+}
+    
+.cources .btn-warning:hover{
+    background-color: rgb(133, 122, 122);
+    color: white;
+    border: none;
+}
+#myBtn{
+    font-size: 14px;
+}
+
+/* *******Footer********** */
+footer h5{
+    color: #ffc107;
+}
+footer .fa{
+    color: #ffc107;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #ffc107;
+}
+footer .social-icon li a{
+    color: white;
+}
+footer .social-icon li:hover{
+    transform: translateY(-4px);
+    transition:0.3s;
+}
+footer .social-icon li a:hover{
+    color: #ffc107;
+}
+
+/* About Us Page */
+.about-us h1{
+    color: #ffc107;
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+}
+.about-us .heading{
+    color: rgb(27, 27, 70);
+    font-weight: bold;
+    margin: 5px;
+}
+.about-us p{
+    font-size: 16px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.about-us .about-welcome{
+    color: rgb(2, 2, 37);
+    font-weight: bold;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.about-welcome p{
+    font-size: 18px;
+}
+.banner h1{
+    color: #ffc107;
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+    /* background: url("img/banner-2.jpg"); */
+}
+.founder-img{
+    float: left;
+    margin: 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.founder p{
+    margin-left: 5px;
+    padding: 5px;
+}
+.contact-us{
+    text-decoration: none;
+    color: black;
+    background-color: #ffc107;
+    font-size: 14px;
+    padding: 8px 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.contact-us:hover{
+    background-color: rgb(133, 122, 122);
+    color: whitesmoke;
+}
+
+/* Contact Us Css */
+.contact-heading{
+    font: 34px;
+    color: #ffc107;
+    font-weight: bold;
+}
+.contact-section p{
+    font-size: 18px;
+}
+.address,.contacts,.email{
+    color: rgb(0, 0, 83);
+    font-weight: bold;
+}
+.email .email-id{
+    text-decoration:none; 
+    color: rgb(0, 0, 83);
+    font-weight: bold;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* **********Our Results********* */
+.results .card{
+    margin: 20px;
+}
+.card-title{
+    font-weight: bolder;
+}
+.card-title{
+    font-weight: bolder;
+}
+/* Scroll to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ffc107;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    color: white;
+  }
